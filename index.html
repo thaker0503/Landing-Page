@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plusplusjakartasans@1.0.1/plusjakartasans.min.css">
+    <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css"  />       
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="./img/Ellipse 1915.png" alt="">
+                <span>LOGO</span>
+            </div>
+            <div class="nav-items">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Blog</a>
+                <a href="#">Portfolio</a>
+            </div>
+                
+
+        </nav>
+        <div class="container-main">
+            <div class="container-title">
+                <h1>We make Products Special</h1>
+            </div>
+            <div class="container-subtitle-wrapper">
+                <div class="container-subtitle">
+                    <span>We specialize in designing scalable SaaS and IoT solutions for startups and enterprises.
+
+                    </span>
+                    <div class="container-btn">
+                        <button>
+                            <span>Get in Touch</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-bg-image-1">
+                <img src="./img/Frame 1171276870.png" alt="">
+            </div>
+            <div class="container-bg-image-2">
+                
+                    
+                    <img src="./img/Frame 1171276869.png" alt="">
+                
+            </div>
+            <div class="container-line"></div>
+            <div class="container-stamps-wrapper">
+                <div class="container-stamps">
+                    <span id="number">49k</span>
+                    <span id="subtitle">Users</span>
+                </div>
+                <div class="container-stamps">
+                    <span id="number">2.3k</span>
+                    <span id="subtitle">Subs</span>
+                </div>
+                <div class="container-stamps">
+                    <span id="number">89</span>
+                    <span id="subtitle">Projects</span>
+                </div>
+            </div>
+            
+
+        </div>
+    </header>
+    <main>
+        <div class="main-title-wrapper">
+            <div class="main-breadcrumb">
+                02 / <span>About</span>
+            </div>
+            <div class="main-title">
+                Company <br> Lorem <span>Ipsum</span>
+            </div>
+        </div>
+        <div class="main-slider-wrapper">
+            <div class="main-slider-img">
+                <img src="./img/unsplash_bMSA5-tLFao.png" >
+            </div>
+            <div class="main-slider-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id natus quisquam architecto obcaecati vel voluptatibus, quasi earum sed libero praesentium quam aliquam corrupti sapiente dolorum hic quos nam inventore perferendis?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut aspernatur id aliquam ea possimus praesentium earum nihil quidem sequi eaque quaerat qui quia nulla facere accusantium, itaque, atque non?
+            </div>
+            <!-- <div class="main-slider-controls">
+                <div class="mian-slider-control-item">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <footer>
+        <div class="footer-btn">
+            <button>
+                <span>Get in Touch</span>
+            </button>
+        </div>
+        <div class="marquee">
+            
+                
+                    <ul class="marquee-content">
+                        <li class="marquee-items">Idea</li>
+                        <li class="marquee-items">Work</li>
+                        <li class="marquee-items">Think</li>
+                        <li class="marquee-items">Brand</li>
+                    </ul>
+                
+        
+        </div>
+    </footer>
+
+    <script>
+        const root = document.documentElement;
+        const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+        const marqueeContent = document.querySelector("ul.marquee-content");
+
+        root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+        for(let i=0; i<marqueeElementsDisplayed; i++) {
+        marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+        }
+    </script>
+</body>
+</html>
